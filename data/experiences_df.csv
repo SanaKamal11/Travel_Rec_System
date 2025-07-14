@@ -1,0 +1,51 @@
+City,Experience,Category,Price,Rating
+barcelona,Local Food Experience,Cultural,153.48,3.9
+barcelona,Museum Visit,Cultural,141.81,4.8
+barcelona,Local Food Experience,Historical,95.95,3.5
+barcelona,Hiking Trip,Nature,110.96,3.5
+barcelona,Hiking Trip,Historical,95.51,4.2
+rome,Boat Ride,Cultural,156.59,3.7
+rome,Temple Visit,Food,70.02,3.8
+rome,Cooking Class,Cultural,36.69,3.6
+rome,Cooking Class,Historical,67.61,3.6
+rome,Market Tour,Historical,42.47,4.9
+tokyo,Local Food Experience,Historical,72.77,4.4
+tokyo,Cooking Class,Historical,54.61,3.6
+tokyo,Hiking Trip,Food,197.34,4.8
+tokyo,Local Food Experience,Adventure,70.04,4.5
+tokyo,Cooking Class,Nature,86.63,3.8
+paris,Boat Ride,Cultural,129.64,3.8
+paris,Hiking Trip,Nature,103.21,3.9
+paris,Sunset View,Nature,143.23,4.8
+paris,City Walking Tour,Nature,167.92,4.7
+paris,Temple Visit,Food,31.91,4.9
+bangkok,Live Music Night,Food,58.27,4.2
+bangkok,Market Tour,Nature,67.68,3.9
+bangkok,Sunset View,Historical,67.29,4.4
+bangkok,Live Music Night,Adventure,85.16,5.0
+bangkok,Museum Visit,Historical,108.83,4.6
+new york,Local Food Experience,Nature,132.94,4.7
+new york,Temple Visit,Historical,31.43,4.1
+new york,Market Tour,Historical,65.25,4.3
+new york,City Walking Tour,Cultural,142.71,4.3
+new york,Boat Ride,Food,40.08,4.2
+cape town,Market Tour,Cultural,191.69,4.8
+cape town,Boat Ride,Historical,157.15,4.3
+cape town,Local Food Experience,Food,171.5,4.3
+cape town,Hiking Trip,Nature,87.3,3.7
+cape town,Sunset View,Cultural,127.81,4.2
+sydney,Local Food Experience,Food,178.17,4.7
+sydney,Boat Ride,Nature,30.43,4.8
+sydney,Local Food Experience,Cultural,151.74,4.7
+sydney,Sunset View,Nature,43.11,4.2
+sydney,Sunset View,Nature,67.71,4.8
+dubai,Temple Visit,Nature,187.2,4.6
+dubai,Hiking Trip,Food,91.82,4.5
+dubai,Cooking Class,Adventure,181.93,4.2
+dubai,Hiking Trip,Nature,31.52,3.5
+dubai,Sunset View,Nature,125.92,3.5
+rio de janeiro,City Walking Tour,Nature,32.13,3.5
+rio de janeiro,Cooking Class,Cultural,112.55,3.9
+rio de janeiro,Market Tour,Nature,117.06,4.6
+rio de janeiro,Live Music Night,Historical,105.08,4.7
+rio de janeiro,Temple Visit,Nature,36.98,4.5
