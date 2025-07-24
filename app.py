@@ -7,6 +7,7 @@ from data_loader import load_experiences_data  # or replace with pd.read_csv
 experiences_df = load_experiences_data()  # or pd.read_csv("data/experiences.csv")
 
 st.title("🌍 Personalized Travel Recommender")
+st.write("✅ Streamlit app loaded!")
 
 with st.sidebar:
     st.header("Tell us about you ✈️")
