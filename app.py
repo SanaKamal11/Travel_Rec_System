@@ -32,16 +32,19 @@ def build_user_vector(age, budget, season, interests):
 user_vector = build_user_vector(age, budget, season, interests)
 
 # Recommendation logic trigger
+# Recommendation logic trigger
 if st.button("Get Recommendations"):
     if not interests:
         st.warning("⚠️ Please select at least one interest.")
     elif budget < 300:
         st.error("Your budget might be too low for international travel.")
     else:
-        results = recommend_experiences(user_vector, experiences_df)
-        for city, exps in results.items():
-            st.subheader(f"🏙️ {city}")
-            st.dataframe(exps.head(5))
+        # --- TEST MODE: manually display first 5 rows of data ---
+        st.subheader("🏙️ Sample City")
+        st.write("Top 5 Recommended Experiences:")
+        sample_data = experiences_df.head(5)
+        st.dataframe(sample_data)
+
 
 st.markdown("---")
 st.markdown("Made with ❤️ by Sana Kamal | [GitHub Repo](https://github.com/SanaKamal11/Travel_Rec_System)")
