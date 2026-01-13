@@ -1,16 +1,21 @@
 import streamlit as st
 import pandas as pd
+import os
 from recommender import recommend_experiences
 
+st.set_page_config(page_title="Personalized Travel Recommender", layout="wide")
 
-# Load your data
-experiences_df = pd.read_csv("C:\\Users\\aishwaryas1\\Downloads\\Travel_Rec_System-main\\Travel_Rec_System-main\\data\\experiences_df.csv")  # or pd.read_csv("data/experiences.csv")
+DATA_PATH = os.path.join("data", "experiences_df.csv")
 
-# App title and intro
+@st.cache_data
+def load_data():
+    return pd.read_csv(DATA_PATH)
+
+experiences_df = load_data()
+
 st.title("🌍 Personalized Travel Recommender")
 st.write("Get tailored travel experiences based on your preferences!")
 
-# Sidebar for user inputs
 with st.sidebar:
     st.header("Tell us about you ✈️")
     name = st.text_input("Your Name")
@@ -23,8 +28,6 @@ with st.sidebar:
     )
     min_rating = st.slider("Minimum Experience Rating", 3.0, 5.0, 4.0, step=0.1)
 
-
-# Convert inputs to user vector
 def build_user_vector(interests, budget_min, budget_max, min_rating):
     return {
         "preferred_categories": interests if interests else [],
@@ -37,18 +40,15 @@ def build_user_vector(interests, budget_min, budget_max, min_rating):
         }
     }
 
-
 user_vector = build_user_vector(interests, budget_min, budget_max, min_rating)
 
-# Trigger recommendation
 if st.button("Get Recommendations"):
     if not interests:
         st.warning("⚠️ Please select at least one interest.")
     else:
         st.subheader("🏙️ Top Experiences Across Cities")
         recommendations = recommend_experiences(user_vector, experiences_df, top_m=3)
-        st.dataframe(recommendations)
+        st.dataframe(recommendations, use_container_width=True)
 
-# Footer
 st.markdown("---")
-st.markdown("Made with ❤️ by Sana Kamal | [GitHub Repo](https://github.com/SanaKamal11/Travel_Rec_System)")
+st.markdown("Made with ❤️ by Sana Kamal")
